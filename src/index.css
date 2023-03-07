@@ -11,3 +11,47 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
+
+h1 {
+  margin: 0;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.container div {
+  width: 705px;
+}
+
+.textHP {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+  padding: 10px;
+}
+
+.textHP p {
+  text-align: left;
+}
+
+.beerCard {
+  display: flex;
+  flex-direction: row;
+  text-align: left;
+
+}
+
+.beerImg img{
+  height: 200px;
+  padding: 10px;
+}
+
+.tag {
+  color: darkgray;
+  font-weight: 700;
+}
