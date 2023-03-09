@@ -1,7 +1,7 @@
 import { useEffect, useState } from 'react'
 import axios from 'axios'
 import Navbar from '../components/Navbar'
-import { Link, NavLink, Router, useParams } from 'react-router-dom'
+import { useParams } from 'react-router-dom'
 
  
 function RandomBeer() {
@@ -18,11 +18,7 @@ function RandomBeer() {
     })
   },[])
 
- 
- 
-  
-
-  return (
+   return (
     <div>
         <Navbar/>
         <div className='container' key={beers._id}>

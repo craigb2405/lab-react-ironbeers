@@ -1,3 +1,5 @@
+
+
 body {
   margin: 0;
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
@@ -23,8 +25,20 @@ h1 {
   align-items: center;
 }
 
-.container div {
-  width: 705px;
+.hpDiv{
+  width: 470px;
+}
+
+.hpDiv img{
+  width: 500px;
+}
+
+.homeNav {
+  margin: 0;
+}
+
+.homeNav img {
+  width: 500px;
 }
 
 .textHP {
@@ -43,21 +57,12 @@ h1 {
   display: flex;
   flex-direction: row;
   text-align: left;
+  width: 500px;
+  justify-content: space-between;
 
 }
 
-.beerCardInd {
-  display: flex;
-  flex-direction: column;
- 
 
-}
-
-.beerImgInd img{
-  height: 200px;
-  padding: ;
-  
-}
 
 .beerImg img{
   height: 300px;
@@ -69,6 +74,72 @@ h1 {
   font-weight: 700;
 }
 
+.beerCardInd {
+  display: flex;
+  flex-direction: column;
+  width: 470px;
+}
+
+.beerImgInd img{
+  height: 200px;
+}
+
 .beerText {
   text-align: left;
+}
+
+.darkGray {
+  color: darkgray;
+  font-weight: 700;
+}
+
+.listItem{
+  text-decoration: none;
+  color: black;
+}
+
+.form {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+ 
+
+}
+
+.form form{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 300px;
+  text-align: left;
+}
+
+form input {
+  margin: 10px;
+  padding: 5px;
+  border-radius: 15px;
+}
+
+#button {
+  background-color: #3DC4FC;
+  border-width: 0;
+  padding: 10px;
+  width: 200px;
+  color: white;
+  text-transform:uppercas;
+  font-weight: 700;
+}
+
+
+
+.heading {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.firstBrewed {
+  font-weight: 700;
 }

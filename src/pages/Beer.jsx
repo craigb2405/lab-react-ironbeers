@@ -18,22 +18,22 @@ function SingleBeer() {
     })
   },[])
 
- 
- 
-  
-
   return (
     <div>
         <Navbar/>
         <div className='container' key={beers._id}>
                 <div className='beerCardInd'>
                 <div className='beerImg'><img src={beers.image_url}/></div>
-                    <div className='beerText'><h2>{beers.name}</h2>
-                    <p className='tag'>{beers.tagline}</p>
+
+
+                   <div className='heading'><h2 className='heading'>{beers.name}</h2><h2 className='darkGray'>{beers.attenuation_level}</h2></div>
+                   <div className='heading'>
+                    <h3 className='darkGray'>{beers.tagline}</h3>
                     <p className='firstBrewed'>{beers.first_brewed}</p>
-                    <p className='attenuation'>{beers.attenuation_level}</p>
+                    </div>
+                    <div className='beerText'>
                     <p className='description'>{beers.description}</p>
-                    <p><b>Created By:</b> {beers.contributed_by}</p></div>
+                    <p className='darkGray'>{beers.contributed_by}</p></div>
                 </div>
             </div>
             </div>

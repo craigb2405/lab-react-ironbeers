@@ -4,7 +4,7 @@ import HomeNav from '../assets/HomeNav.png'
 
 function Navbar() {
   return (
-    <div><Link to="/"><img src={HomeNav} alt="homeButton"/></Link></div>
+    <div className='homeNav'><Link to="/"><img src={HomeNav} alt="homeButton"/></Link></div>
   )
 }
 
