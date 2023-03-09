@@ -46,12 +46,29 @@ h1 {
 
 }
 
-.beerImg img{
+.beerCardInd {
+  display: flex;
+  flex-direction: column;
+ 
+
+}
+
+.beerImgInd img{
   height: 200px;
+  padding: ;
+  
+}
+
+.beerImg img{
+  height: 300px;
   padding: 10px;
 }
 
 .tag {
   color: darkgray;
   font-weight: 700;
+}
+
+.beerText {
+  text-align: left;
 }

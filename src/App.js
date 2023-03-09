@@ -1,22 +1,34 @@
 import './App.css';
-import { Route, Routes } from 'react-router-dom';
+import { Route, Routes, useParams, Switch } from 'react-router-dom';
 import Navbar from './components/Navbar';
 import HomePage from './pages/HomePage';
 import AllBeers from './pages/AllBeers';
+import SingleBeer from './pages/Beer';
+import RandomBeer from './pages/Random';
 
 
 
 function App() {
-  return (
+
+  function Child() {
+    let { id } = useParams();
+  }
+   return (
     <div className="App">
-    <Navbar/>
+
   <Routes>
        <Route path="/" element={<HomePage />}/>
        <Route path="/allBeers" element={<AllBeers />} />
+       <Route path="/beers/:id" element={<SingleBeer />}/>
+       <Route path="/random" element={<RandomBeer />}/>
   </Routes>
+
+  
   
     </div>
   );
 }
+
+
 
 export default App;
